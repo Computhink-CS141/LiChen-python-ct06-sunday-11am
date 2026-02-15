@@ -71,17 +71,23 @@ print("Hello from lesson 5")
 # What happens if the user inputs a higher start number than stop?
 # Modify your code to be able to handle that scenario.
 
-n1 = input("give me a number: ")
-n1 = int(n1) #convert
-n2 = input("give me another number: ")
-n2 = int(n2) #convert
+# n1 = input("give me a number: ")
+# n1 = int(n1) #convert
+# n2 = input("give me another number: ")
+# n2 = int(n2) #convert
 
-if n1 > n2: 
-    start = n2
-    stop = n1
-else:
-    start = n1
-    stop = n2
+# if n1 > n2: 
+#     start = n2
+#     stop = n1
+# else:
+#     start = n1
+#     stop = n2
 
-for count in range(start, stop):
-    print(count)
+# for count in range(start, stop):
+#     print(count)
+
+
+# num = 0
+# for count in range(10):
+#     num = num + count
+#     print(num)
