@@ -44,16 +44,29 @@ print("Hello from lesson 8")
 # x = False
 # print(y == x)
 
-num1
-num2
-hidden_num
-reply
+# num1
+# num2
+# hidden_num
+# reply
+
+# import random
+# num1 = random.randint(1, 50)
+# num2 = random.randint(1, 50)
+# question = "what is " + str(num1) + " + " + str(num2) + "?"
+# hiddenNum = num1 + num2
+# rely = input(question)
+# reply = int(reply)
+# print(reply == hiddenNum)
 
 import random
-num1 = random.randint(1, 50)
-num2 = random.randint(1, 50)
-question = "what is " + str(num1) + " + " + str(num2) + "?"
-hiddenNum = num1 + num2
-rely = input(question)
-reply = int(reply)
-print(reply == hiddenNum)
+num_questions = int(input("how many questions? "))
+for count in range(num_questions):
+    num1 = random.randint(1,6)
+    num2 = random.randint(1,6)
+    question = "what is " + str(num1) + " x " + str(num2) + "? "
+    hidden_answer = num1 * num2
+    user_answer = int(input(question))
+    if hidden_answer == user_answer:
+        print("correct")
+    else:
+        print("wrong")
